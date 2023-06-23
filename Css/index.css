@@ -380,6 +380,292 @@ hr{
   }
   
   @media (max-width:720px){
+    .navbar{
+      margin-top: 70px;
+    }
+    .links{
+      text-decoration: none;
+      color: white;
+      position: relative;
+  
+  }
+  .links:hover::after{
+      content: "";
+      position: absolute;
+      left: 25%;
+      right: 25%;
+      bottom: 2%;
+      
+      
+  } 
+  .links::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 3px;
+      background-color: white;
+      bottom: -5px;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+  
+  .links:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  ul{
+      color: white;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      margin-left: 25em;
+      gap: 9em;
+      list-style-type: none;
+      font-family:"poppins";
+  
+  }
+  .mainbody{
+    color: white;
+   justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7em;
+}
+.mainbody h1{
+    font-size: 7em;
+    letter-spacing: 0px;
+    font-family:"opereum";
+    float:none;
+   width: 11em;
+   text-align: center;
+  font-weight:400;
+}
+h2{
+  margin-top: 30px;
+  font-size:3em ;
+  font-family: "poppins";
+  font-weight:100;
+  width: 26em;
+  margin-left:em;
+  color: white;
+}
+h2 {
+  --b: 0.1em;   /* the thickness of the line */
+  --c: #e1a87a; /* the color */
+  display: inline-block;
+  color: white;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+h2:hover {
+  color: #e1a87a;
+  --_p: 100%;
+  --_s: .3s;
+}
+.about{
+  margin-top: 20em;
+}
+.abouttitle{
+  text-align: center;
+  color: white;
+  font-size: 4em;
+  width: 19em;
+  font-family: "opereum";
+  letter-spacing: 2px;
+}
+.abouttitle h1{
+  font-weight: 100;
+}
+.aboutbody{
+  margin-top: 10em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24em;
+  justify-content: space-between;
+}
+.vision h3{
+  font-size: 4em;
+  color: #e1a87a;
+  text-align: center;
+  width: 19em;
+  font-family: "opereum";
+  font-weight: 100;
+}
+
+.vision p{
+  margin-top: 30px;
+  font-family: "poppins";
+  font-size: 2.6em;
+  margin-left: 8em;
+  width: 200%;
+}
+.expertise h3{
+  font-size: 4em;
+  color: #e1a87a;
+  width: 20em;
+  text-align: center;
+  font-family: "opereum";
+  font-weight: 100;
+  
+  }
+
+.expertise p{
+  margin-top: 30px;
+  font-family: "poppins";
+  
+  font-size: 2.6em;
+  margin-left: 8em;
+  width: 200%;
+}
+.projects{
+  margin-top: 15em;
+}
+.projheader{
+  text-align: center;
+  margin-left: 4.4em;
+  
+  
+}
+.projects h1{
+ color: white;
+  text-align: center;
+  font-size: 7em;
+  font-weight: 100;
+  font-family: "opereum";
+  letter-spacing: 2px;
+;
+}
+.inno{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.projects img{
+  margin-top: 8em;
+  width: 42em;
+  height: 42em;
+  margin-left: 16em;
+  margin-bottom: 90px;
+}
+.projtext{
+padding-top: 2em;
+margin-left: 19em;
+
+}
+.projtext h1{
+font-size: 8em;
+font-family: "opereum";
+text-align: left;
+width: 7em;
+color: #e1a87a;
+}
+.projword{
+  width: 860%;
+  margin-left: 7px;
+  padding-top: 40px;
+  text-align: left;
+  color: white;
+  font-size: 2.5em;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: .02em;
+  line-height: 1.8;
+}
+.projtext button{
+  color: white;
+  margin-top: 35px;
+  margin-left: 1em;
+  border-style: none;
+  width: 700%;
+  font-size: 3em;
+  padding: 30px 75px 30px 75px;
+  border: 2px solid #e1a87a;
+  cursor: pointer;
+}
+.projtext button:hover,
+.projtext button:focus {
+box-shadow: inset 0 -5.2em 0 0 #e1a87a;
+transition: 0.49s;
+}
+.inno2{
+display: flex;
+margin-right: 4em;
+flex-direction: column;
+}
+.inno2 img{
+  margin-top: 8em;
+  width: 42em;
+  height: 42em;
+  margin-left: 16em;
+  margin-bottom: 90px;
+
+}
+.inno2 h1{
+font-size:4em;
+
+}
+.inno2 p{
+width: 80%;
+padding-left:10 px;
+}
+.inno2 button{
+margin-top: 27px;
+margin-left: 12em;
+}
+.projtext2{
+padding-top: 0em;
+margin-left: 16em;
+
+}
+.projtext2 h1{
+  font-size: 7em;
+  font-family: "opereum";
+  text-align: center;
+  width: 8em;
+  color: #e1a87a;
+}
+.projword2{
+  
+  margin-left: 7px;
+  padding-top: 40px;
+  width: 4000%;
+  text-align: left;
+  color: white;
+  font-size: 1em;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: .02em;
+  line-height: 1.8;
+}
+.projtext2 button{
+  color: white;
+  margin-top: 35px;
+  margin-left: 14em;
+  border-style: none;
+  padding: 25px 25px 25px 25px;
+  border: 2px solid #e1a87a;
+  cursor: pointer;
+}
+.projtext2 button:hover,
+.projtext2 button:focus {
+box-shadow: inset 0 -5.2em 0 0 #e1a87a;
+transition: 0.49s;
+}
+
+    
+
+    
   .footer{
   text-align:left;
   padding:5%;
