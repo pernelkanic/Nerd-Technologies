@@ -380,10 +380,10 @@ hr{
   }
   
   @media (max-width:720px){
-    
     *{
       overflow-x: hidden;
     }
+   
     img{
       padding: 0px;
     }
@@ -480,13 +480,13 @@ h2:hover {
   --_s: .3s;
 }
 .about{
-  margin-top: 20em;
+  margin-top: 8em;
 }
 .abouttitle{
   text-align: center;
   color: white;
-  font-size: 4em;
-  width: 19em;
+  font-size: 1.3em;
+  width: 20em;
   font-family: "opereum";
   letter-spacing: 2px;
 }
@@ -494,18 +494,18 @@ h2:hover {
   font-weight: 100;
 }
 .aboutbody{
-  margin-top: 10em;
+  margin-top: 5em;
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 24em;
+  
   justify-content: space-between;
 }
 .vision h3{
-  font-size: 4em;
+  font-size: 2.3em;
   color: #e1a87a;
   text-align: center;
-  width: 19em;
+  width: 11.5em;
   font-family: "opereum";
   font-weight: 100;
 }
@@ -513,14 +513,14 @@ h2:hover {
 .vision p{
   margin-top: 30px;
   font-family: "poppins";
-  font-size: 2.6em;
-  margin-left: 8em;
-  width: 200%;
+  font-size: 0.9em;
+  margin-left: 4.4em;
+  width: 78%;
 }
 .expertise h3{
-  font-size: 4em;
+  font-size: 1.9em;
   color: #e1a87a;
-  width: 20em;
+  width: 14em;
   text-align: center;
   font-family: "opereum";
   font-weight: 100;
@@ -530,24 +530,23 @@ h2:hover {
 .expertise p{
   margin-top: 30px;
   font-family: "poppins";
-  
-  font-size: 2.6em;
-  margin-left: 8em;
-  width: 200%;
+  font-size: 0.9em;
+  margin-left: 4.4em;
+  width: 78%;
 }
 .projects{
-  margin-top: 15em;
+  margin-top: 10em;
 }
 .projheader{
   text-align: center;
-  margin-left: 4.4em;
+  margin-left: 0.8em;
   
   
 }
 .projects h1{
  color: white;
   text-align: center;
-  font-size: 7em;
+  font-size: 3.3em;
   font-weight: 100;
   font-family: "opereum";
   letter-spacing: 2px;
@@ -559,31 +558,32 @@ h2:hover {
   flex-direction: column;
 }
 .projects img{
-  margin-top: 8em;
-  width: 42em;
-  height: 42em;
-  margin-left: 16em;
-  margin-bottom: 90px;
+  margin-top: 1em;
+  width: 10em;
+  height: 10em;
+  margin-left: 8.3em;
+  margin-bottom: 50px;
 }
 .projtext{
-padding-top: 2em;
-margin-left: 19em;
+padding-top: 0.1em;
+margin-left: 5em;
 
 }
 .projtext h1{
-font-size: 8em;
+font-size: 1.7em;
 font-family: "opereum";
 text-align: left;
+margin-left: 1.5em;
 width: 7em;
 color: #e1a87a;
 }
 .projword{
-  width: 860%;
-  margin-left: 7px;
-  padding-top: 40px;
+  width: 80%;
+  margin-left: 15px;
+  padding-top: 20px;
   text-align: left;
   color: white;
-  font-size: 2.5em;
+  font-size: 0.7em;
   font-family: "Poppins";
   font-weight: 300;
   font-style: normal;
@@ -592,12 +592,12 @@ color: #e1a87a;
 }
 .projtext button{
   color: white;
-  margin-top: 35px;
-  margin-left: 1em;
+  margin-top: 27px;
+  margin-left: 3em;
   border-style: none;
-  width: 700%;
-  font-size: 3em;
-  padding: 30px 75px 30px 75px;
+  width: 50%;
+  font-size: 0.9em;
+  padding: 10px 30px 10px 30px;
   border: 2px solid #e1a87a;
   cursor: pointer;
 }
@@ -612,42 +612,52 @@ margin-right: 4em;
 flex-direction: column;
 }
 .inno2 img{
+  margin-top: 1em;
+  width: 10em;
+  height: 10em;
   margin-top: 8em;
-  width: 42em;
-  height: 42em;
-  margin-left: 16em;
-  margin-bottom: 90px;
+  margin-left: 7.8em;
+  margin-bottom: 50px;
 
 }
 .inno2 h1{
-font-size:4em;
+font-size:1em;
 
 }
 .inno2 p{
-width: 80%;
-padding-left:10 px;
+  width: 100%;
+  margin-left: 35px;
+  padding-top: 20px;
+  text-align: left;
+  color: white;
+  font-size: 0.7em;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: .02em;
+  line-height: 1.8;
 }
 .inno2 button{
 margin-top: 27px;
-margin-left: 12em;
+margin-left: 1em;
 }
 .projtext2{
 padding-top: 0em;
-margin-left: 16em;
+margin-left: 4em;
 
 }
 .projtext2 h1{
-  font-size: 7em;
+  font-size: 2em;
   font-family: "opereum";
   text-align: center;
-  width: 8em;
+  width: 10em;
   color: #e1a87a;
 }
 .projword2{
   
-  margin-left: 7px;
+  margin-left: 1em;
   padding-top: 40px;
-  width: 4000%;
+  width: 80%;
   text-align: left;
   color: white;
   font-size: 1em;
@@ -660,9 +670,9 @@ margin-left: 16em;
 .projtext2 button{
   color: white;
   margin-top: 35px;
-  margin-left: 14em;
+  margin-left: 5em;
   border-style: none;
-  padding: 25px 25px 25px 25px;
+  padding: 10px 30px 10px 30px;
   border: 2px solid #e1a87a;
   cursor: pointer;
 }
@@ -671,8 +681,47 @@ margin-left: 16em;
 box-shadow: inset 0 -5.2em 0 0 #e1a87a;
 transition: 0.49s;
 }
+hr{
+  margin-top: 40px;
+  width: 90%;
+  margin-left:1.3em;
+}
+.gmail{
+  margin-top: 65px;
+  margin-left: 6px;
+  font-size: 10px;
+  color: #e1a87a;
+}
 
-    
+.gmail:hover{
+  color: white;
+  transition: 0.30s;
+}
+
+.footer img{
+  padding: 0px;
+  padding-top: 28px;
+  width:5em;
+  height: 5em;
+  margin-left: 4em;
+}
+.footer .row{
+  
+  display: inline;
+  width:40px;
+  margin:2% 0%;
+  margin-left: 5.6em;
+  padding:3%  0% 2% 0% ;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  margin: 0px 20px 1px 5px;
+  text-decoration:none;
+  color:#e1a87a;
+  transition:0.5s;
+  }
 
     
   .footer{
@@ -681,10 +730,10 @@ transition: 0.49s;
   }
   .footer .row ul li{
   display:block;
-  margin:10px 0px;
+  
   text-align:left;
   }
   .footer .row a i{
-  margin:0% 3%;
+  margin:0% 6% 20%;
   }
   }
