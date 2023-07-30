@@ -124,7 +124,16 @@ h2 {
     --_p: 100%;
     --_s: .3s;
   }
-
+  marquee{ 
+    margin-top: 7em;
+    font-size: 2.5em;
+    
+    
+  }
+  .marqa{
+  color: #e1a87a;;
+    text-decoration: none;
+  }
   .abouttitle{
     text-align: center;
     color: white;
@@ -137,7 +146,7 @@ h2 {
     font-weight: 100;
   }
   .aboutbody{
-    margin-top: 23em;
+    margin-top: 18em;
     color: white;
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 15px));
@@ -389,6 +398,7 @@ hr{
     height: 6em;
     margin-left: 21em;
   }
+
   .footer .row{
   
   display: inline;
