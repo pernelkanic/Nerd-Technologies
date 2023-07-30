@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding:0px;
-    background-color: black;
+    background-color:  #0e0e0e;
     
 }
 @font-face {
@@ -20,13 +20,17 @@
     font-family: "opereum";
     src: url("../Static/fonts/Demo_Fonts/Fontspring-DEMO-orpheuspro-regular.otf");
   }
+  @font-face {
+    font-family: "Schweiz";
+    src: url("../Static/fonts");
+  }
 
 .navbar{
  display: flex;   
  
 }
 img{
-    width: 5em;
+    width: 6em;
     padding: 20px 0px 0px 5em;
     
 }
@@ -35,33 +39,8 @@ img{
     position: relative;
     display: inline-block;
 }
-.imglinks:hover::after{
-    content: "";
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    bottom: 2%;
-    
-    
-} 
-.imglinks::before {
-    content: '';
-    position: absolute;
-    width: 45%;
-    height: 2px;
-    border-radius: 3px;
-    background-color: white;
-    bottom: 2em;
-    left: 85px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-  }
 
-.imglinks:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
+
 .links{
     text-decoration: none;
     color: white;
@@ -111,11 +90,11 @@ ul{
    justify-content: center; 
     align-items: center;
     text-align: center;
-    margin-top: 9em;
+    margin-top: 12em;
 }
 .mainbody h1{
-    font-size: 8em;
-    letter-spacing: 0px;
+    font-size: 4em;
+    letter-spacing: 4px;
     font-family:"opereum";
     font-weight:400;
 }
@@ -163,13 +142,17 @@ h2 {
     margin-top: 10em;
     color: white;
     display: flex;
-    gap: 70px;
-    justify-content: space-between;
+    gap:0px;
+    justify-content: space-around;
   }
   .vision h3{
     font-size: 3em;
     color: #e1a87a;
+    display: flex;
+    margin-left: 1.9em;
+    letter-spacing: 4px;
     text-align: center;
+    
     font-family: "opereum";
     font-weight: 100;
   }
@@ -178,13 +161,15 @@ h2 {
     margin-top: 30px;
     font-family: "poppins";
     font-size: 1.4em;
-    margin-left: 5em;
-    width: 80%;
+    margin-left: 4em;
+    width:70%;
   }
   .expertise h3{
     font-size: 3em;
     color: #e1a87a;
-    text-align: center;
+    margin-left: 3.3em;
+    letter-spacing: 4px;
+    
     font-family: "opereum";
     font-weight: 100;
     
@@ -192,10 +177,27 @@ h2 {
   
   .expertise p{
     margin-top: 30px;
-    margin-left: 6em;
+    margin-left: 7em;
     font-family: "poppins";
     font-size: 1.4em;
-    width: 80%;
+    width: 70%;
+  }
+  .whyus{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 8em;
+    font-family: "opereum";
+    letter-spacing: 2px;
+  }
+  .whyus p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5em;
+    width: 67%;
+   margin-left: auto;
+   font-family: "poppins";
+   margin-right: auto;
   }
 .projects{
     margin-top: 15em;
