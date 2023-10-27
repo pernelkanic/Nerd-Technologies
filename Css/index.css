@@ -1,8 +1,8 @@
 *{
     margin:0px;
     padding:0px;
-    background-color:  #0e0e0e;
-    
+    background-color: black;
+
 }
 @font-face {
     font-family: "cookie";
@@ -26,13 +26,14 @@
   }
 
 .navbar{
- display: flex;   
- 
+ display: flex;
+
 }
 img{
-    width: 6em;
-    padding: 20px 0px 0px 5em;
-    
+    width: 8em;
+    height: 8em;
+    padding: 0px 0px 0px 1em;
+
 }
 
 body {
@@ -63,9 +64,9 @@ body {
     left: 25%;
     right: 25%;
     bottom: 2%;
-    
-    
-} 
+
+
+}
 .links::before {
     content: '';
     position: absolute;
@@ -87,17 +88,17 @@ body {
 .navbar ul{
     color: white;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    margin-left: 50em;
-    gap: 9em;
+    margin-left: 5em;
+    gap: 5em;
     list-style-type: none;
     font-family:"poppins";
 
 }
 .mainbody{
     color: white;
-   justify-content: center; 
+   justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 12em;
@@ -122,7 +123,7 @@ h2 {
     display: inline-block;
     color: white;
     padding-block: var(--b);
-    background: 
+    background:
       linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
       linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
     -webkit-background-clip: text,padding-box;
@@ -134,11 +135,11 @@ h2 {
     --_p: 100%;
     --_s: .3s;
   }
-  marquee{ 
+  marquee{
     margin-top: 7em;
     font-size: 2.5em;
-    
-    
+
+
   }
   .marqa{
   color: #e1a87a;;
@@ -148,7 +149,7 @@ h2 {
     text-align: center;
     color: white;
     font-size: 2.5em;
-    
+
     font-family: "opereum";
     letter-spacing: 2px;
   }
@@ -161,7 +162,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 15px));
     gap:0px;
-    
+
     justify-content: space-around;
   }
   .vision h3{
@@ -171,7 +172,7 @@ h2 {
     margin-left: 1.9em;
     letter-spacing: 4px;
     text-align: center;
-    
+
     font-family: "opereum";
     font-weight: 100;
   }
@@ -188,12 +189,12 @@ h2 {
     color: #e1a87a;
     margin-left: 3.3em;
     letter-spacing: 4px;
-    
+
     font-family: "opereum";
     font-weight: 100;
-    
+
     }
-  
+
   .expertise p{
     margin-top: 30px;
     margin-left: 7em;
@@ -206,7 +207,7 @@ h2 {
     color: white;
     font-size: 2.5em;
     margin-top: 5em;
-    
+
     font-family: "opereum";
     letter-spacing: 2px;
   }
@@ -250,7 +251,7 @@ h2 {
   margin-top: 3em;
   margin-left: auto;
   margin-right: auto;
-  
+
   font-family: "poppins";
   list-style-type: disc;
 }
@@ -259,16 +260,16 @@ hr{
   width:90%;
   margin-top: 10em;
   margin-left: 70px;
-  
-  
+
+
 }
 .footer{
-  background:#0e0e0e;;
+  background:black;;
 
-  
+
   text-align:center;
   display: flex;
-  
+
   }
   .gmail{
     margin-top: 120px;
@@ -290,7 +291,7 @@ hr{
   }
 
   .footer .row{
-  
+
   display: inline;
   width:400px;
   margin:6% 0%;
@@ -299,29 +300,29 @@ hr{
   color:gray;
   font-size:0.8em;
   }
-  
+
   .footer .row a{
   margin: 0px 20px 10px 20px;
   text-decoration:none;
   color:#e1a87a;
   transition:0.5s;
   }
-  
+
   .footer .row a:hover{
   color:#fff;
   }
-  
-  
+
+
   .footer .row a i{
   font-size:2em;
   margin:0% 1%;
   }
-  
+
   @media (max-width:720px){
     *{
       overflow-x: hidden;
     }
-   
+
     img{
       padding: 0px;
     }
@@ -333,7 +334,7 @@ hr{
       text-decoration: none;
       color: white;
       position: relative;
-  
+
   }
   .links:hover::after{
       content: "";
@@ -341,9 +342,9 @@ hr{
       left: 5%;
       right: 5%;
       bottom: 2%;
-      
-      
-  } 
+
+
+  }
   .links::before {
       content: '';
       position: absolute;
@@ -357,7 +358,7 @@ hr{
       transform: scaleX(0);
       transition: transform .3s ease-in-out;
     }
-  
+
   .links:hover::before {
     transform-origin: left;
     transform: scaleX(1);
@@ -365,14 +366,14 @@ hr{
   .navbarul{
       color: white;
       display: flex;
-      justify-content: center; 
+      justify-content: center;
       align-items: center;
       margin-left: 3em;
       font-size: 9px;
       gap: 9em;
       list-style-type: none;
       font-family:"poppins";
-  
+
   }
   .mainbody{
     color: white;
@@ -405,7 +406,7 @@ h2 {
   display: inline-block;
   color: white;
   padding-block: var(--b);
-  background: 
+  background:
     linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
     linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
   -webkit-background-clip: text,padding-box;
@@ -436,7 +437,7 @@ h2:hover {
   color: white;
   display: flex;
   flex-direction: column;
-  
+
   justify-content: space-between;
 }
 .vision h3{
@@ -462,7 +463,7 @@ h2:hover {
   text-align: center;
   font-family: "opereum";
   font-weight: 100;
-  
+
   }
 
 .expertise p{
@@ -478,8 +479,8 @@ h2:hover {
 .projheader{
   text-align: center;
   margin-left: 0.8em;
-  
-  
+
+
 }
 .projects h1{
  color: white;
@@ -592,7 +593,7 @@ margin-left: 4em;
   color: #e1a87a;
 }
 .projword2{
-  
+
   margin-left: 1em;
   padding-top: 40px;
   width: 80%;
@@ -644,7 +645,7 @@ hr{
   margin-left: 4em;
 }
 .footer .row{
-  
+
   display: inline;
   width:40px;
   margin:2% 0%;
@@ -653,7 +654,7 @@ hr{
   color:gray;
   font-size:0.8em;
   }
-  
+
   .footer .row a{
   margin: 0px 20px 1px 5px;
   text-decoration:none;
@@ -661,14 +662,14 @@ hr{
   transition:0.5s;
   }
 
-    
+
   .footer{
   text-align:left;
   padding:5%;
   }
   .footer .row ul li{
   display:block;
-  
+
   text-align:left;
   }
   .footer .row a i{
@@ -679,7 +680,7 @@ hr{
     display: flex;
     flex-direction: column;
     color: white;
-    
+
   }
 .aboutpageover h1{
   font-size: 3em;
@@ -688,7 +689,7 @@ hr{
   font-family: "opereum";
   letter-spacing: 5px;
   font-weight: 100;
-  
+
 }
 .aboutpageover p{
   width: 90%;
@@ -750,7 +751,7 @@ hr{
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  
+
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.7);
   color: white;
@@ -768,7 +769,7 @@ hr{
   border-radius: 50%;
   border: 5px solid ;
   margin-top: 20px;
-  
+
 }
 
 
@@ -804,7 +805,7 @@ hr{
   position: relative;
   font-size: 1em;
   background-color: #1e1e1e;
-  
+
 }
 
 .social-icons i {
@@ -830,7 +831,7 @@ hr{
   height: 45px;
   border-radius: 100%;
   display: block;
-  
+
   transition: all 265ms ease-out;
 }
 
