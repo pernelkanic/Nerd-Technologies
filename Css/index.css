@@ -69,7 +69,10 @@ body {
     display: inline-block;
 }
 
-
+.contact-flex{
+  display: flex;
+  justify-content: flex-end;
+}
 .links{
     text-decoration: none;
     color: white;
@@ -98,12 +101,17 @@ body {
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
   }
-
+.contact-right {
+  display: flex;
+justify-content: flex-end;
+gap: 33em;
+align-items: center;
+}
 .links:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
-.navbar ul{
+.listitem{
     color: white;
     display: flex;
     justify-content: center;
@@ -702,11 +710,11 @@ hr{
 
   }
 .aboutpageover h1{
-  font-size: 3em;
-  margin: 2em 0em 0em 2.1em;
+  font-size: 2.5em;
+  margin: 2em 0em 0em 1.2em;
   color: #e1a87a;
   font-family: "opereum";
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-weight: 100;
 
 }
@@ -714,7 +722,7 @@ hr{
   width: 90%;
   margin-top: 1.7em;
   margin-left: 3em;
-  font-size: 2em;
+  font-size: 1.4em;
   font-family: "poppins";
 }
 .tradingjourney{
@@ -729,8 +737,8 @@ hr{
     letter-spacing: 2px;
 }
 .tradingjourney h1{
-  font-size: 1.5em;
-  margin: 1em 0em 0em 1.8em;
+  font-size: 2.5em;
+  margin: 1em 0em 0em 1.2em;
   color: #e1a87a;
   font-family: "opereum";
   letter-spacing: 5px;
@@ -739,13 +747,15 @@ hr{
 .tradingjourney p{
   width: 90%;
   margin-top: 3em;
-  margin-left: 4em;
-  font-size: 0.7em;
+  margin-left: 4.8em;
+  font-size: 1em;
   font-family: "poppins";
 }
 .meetteam h1{
   font-size: 3em;
-  margin: 2em 0em 0em 2.1em;
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
   color: #e1a87a;
   font-family: "opereum";
   letter-spacing: 5px;
@@ -759,7 +769,7 @@ hr{
   grid-gap: 10px;
   justify-content: space-around;
   align-items: center;
- margin-top: 10em;
+ margin-top: 7em;
 
   font-family: "poppins"
 }
