@@ -102,6 +102,7 @@ maximum-scale=1.0, user-scalable=no" >
                 </div>
               
               </div>
+              <form id="myForm">
               <div class="screen-body-item">
                 <div class="app-form">
                   <div class="app-form-group">
@@ -122,6 +123,7 @@ maximum-scale=1.0, user-scalable=no" >
                   </div>
                 </div>
               </div>
+            </form>
             </div>
           </div>
     
@@ -158,3 +160,46 @@ maximum-scale=1.0, user-scalable=no" >
 </body>
 
 </html>
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">      (function () {
+        emailjs.init("_iHqW5YZLg9Kw1kTF");
+      })();
+    </script>
+    <script>
+        // listen to the form submission
+        document
+          .getElementById("myForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+  
+            const serviceID = "service_6kmqrwh";
+            const templateID = "template_qgdrnnh"
+     
+            const name = document.getElementById('name').value;
+         const email = document.getElementById('email').value;
+            const number = document.getElementById('number').value;
+            const message = document.getElementById('message').value;    
+          // send the email here
+          emailjs.send(serviceID, templateID, {
+        from_name: name,
+        from_email: email,
+        contact_number: number,
+        message: message
+    }).then(
+            (response) => {
+              console.log("SUCCESS!", response.status, response.text);
+              alert("SUCCESS!");
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              alert("FAILED...", error);
+            }
+          );
+        });
+    </script>
+  
+          
