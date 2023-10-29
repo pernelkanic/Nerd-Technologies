@@ -10,7 +10,7 @@ maximum-scale=1.0, user-scalable=no" >
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <link rel="stylesheet" href="./Css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/@maildotjs/mail.js"></script>
     <title>Nerd Tech</title>
 </head>
 
@@ -105,16 +105,16 @@ maximum-scale=1.0, user-scalable=no" >
               <div class="screen-body-item">
                 <div class="app-form">
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="NAME" >
+                    <input class="app-form-control" id="name" placeholder="NAME" >
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="EMAIL">
+                    <input class="app-form-control" id="email" placeholder="EMAIL">
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="CONTACT NO">
+                    <input class="app-form-control" id="number" placeholder="CONTACT NO">
                   </div>
                   <div class="app-form-group message">
-                    <input class="app-form-control" placeholder="MESSAGE">
+                    <input class="app-form-control"id="message" placeholder="MESSAGE">
                   </div>
                   <div class="app-form-group buttons">
                     
@@ -126,23 +126,7 @@ maximum-scale=1.0, user-scalable=no" >
           </div>
     
         <script>
-            function sendMessage() {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Sending email using Mail.js
-            mailjs.send('your_email@example.com', {
-                to: 'recipient@example.com',
-                subject: 'New message from your website contact form',
-                text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-            }).then(() => {
-                alert('Message sent successfully!');
-            }).catch((error) => {
-                alert('An error occurred. Please try again later.');
-                console.error('Mail.js error:', error);
-            });
-        }
+          
         </script>
     
     </div>
