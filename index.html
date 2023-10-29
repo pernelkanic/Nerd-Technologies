@@ -17,8 +17,11 @@ maximum-scale=1.0, user-scalable=no" >
 <body>
     <nav>
         <div class="navbar">
+          
             <a href="" class="imglinks"><img src="./Static/squarebullnameimg.jpg" alt=""></a>
-            <div class="contact-right">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            
+            <div class="contact-right" id="menu-items">
             <div>
             <ul class="listitem">
                  <li><a href="about.html" class="links">About</a></li>
@@ -29,9 +32,9 @@ maximum-scale=1.0, user-scalable=no" >
             </ul>
         </div>
             <div class="contact-flex listitem">
-            <li><a href="#background" class="links" style="color: #9e9fa3">Contact Us</a></li>
+            <li><a href="#background" class="links-contact" >Contact Us</a></li>
             </div>
-        </div>  
+        
         </div>
     </nav>
     <main>
@@ -171,6 +174,8 @@ maximum-scale=1.0, user-scalable=no" >
         emailjs.init("_iHqW5YZLg9Kw1kTF");
       })();
     </script>
+
+
     <script>
         // listen to the form submission
         document
@@ -202,6 +207,12 @@ maximum-scale=1.0, user-scalable=no" >
             }
           );
         });
+      
+    
     </script>
+    <script>function toggleMenu() {
+      var menu = document.querySelector('#menu-items');
+      menu.classList.toggle('active');
+  }</script>
   
           

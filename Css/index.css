@@ -81,6 +81,11 @@ body {
     color: white;
     position: relative;
 
+
+}
+.links-contact{
+  color: #9e9fa3;
+  text-decoration: none;
 }
 .links:hover::after{
     content: "";
@@ -120,13 +125,28 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:3em;
+    margin-left:2em;
     gap: 8vh;
     list-style-type: none;
    
     font-family:"poppins";
 
 }
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000; /* Adjust color as needed */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+menu-items {
+  display: flex;
+}
+
 .mainbody{
     color: white;
    justify-content: center;
@@ -725,7 +745,7 @@ h2:hover {
   margin-top: 30px;
   font-family: "poppins";
   font-size: 0.9em;
-  margin-left: 4.4em;
+  margin-left: 2.8em;
   width: 80%;
 }
 .expertise h3{
@@ -741,7 +761,7 @@ h2:hover {
   margin-top: 30px;
   font-family: "poppins";
   font-size: 0.9em;
-  margin-left: 4.4em;
+  margin-left: 2.8em;
   width: 80%;
 }
 
@@ -999,3 +1019,293 @@ hr{
   }
   }
   
+
+  @media only screen and (max-width: 600px) {
+    * {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+/* ... (existing scrollbar styles) ... */
+
+@font-face {
+  /* ... (font-face declarations) ... */
+}
+.menu-icon {
+  display: block;
+  color: white;
+}
+
+#menu-items {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  background-color: #f8f8f8; /* Adjust background color as needed */
+  z-index: 998;
+  text-align: center; /* Ensures items are centered */
+}
+
+#menu-items.active {
+  display: block;
+}
+
+#menu-items ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-items li {
+  display: block;
+  margin: 10px 0;
+}
+/* Common styles */
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.listitem{
+  margin-left: 0px;
+ 
+}
+.links-contact{
+  color: white;
+  text-decoration: none;
+}
+/* Navbar and Links */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  margin: 5px 0;
+}
+
+.links::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.links:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Main Body */
+.mainbody {
+  color: white;
+  text-align: center;
+  margin-top: 7em;
+}
+
+.mainbody h1 {
+  font-size: 2.5em;
+  letter-spacing: 0px;
+  font-family: "opereum";
+  font-weight: 400;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1em;
+  font-family: "poppins";
+  font-weight: 100;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+/* About Section */
+.abouttitle {
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  width: 80%;
+  font-family: "opereum";
+  letter-spacing: 2px;
+  margin: 5em auto 2em auto;
+}
+
+.abouttitle h1 {
+  font-weight: 100;
+}
+
+/* About Body */
+.aboutbody {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vision,
+.expertise {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision h3,
+.expertise h3 {
+  font-size: 1.5em;
+  color: #e1a87a;
+  text-align: center;
+  font-family: "opereum";
+  font-weight: 100;
+  margin: 1em 0;
+}
+.vision h3
+ {
+  font-size: 1.5em;
+  color: #e1a87a;
+  text-align: center;
+  font-family: "opereum";
+  font-weight: 100;
+  margin: 1em 5.3em;
+}
+
+.vision p,
+.expertise p {
+  font-family: "poppins";
+  font-size: 0.9em;
+  text-align: justify;
+  
+}
+/* Why Us Section */
+.whyus {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 4em;
+  font-family: "opereum";
+  letter-spacing: 2px;
+}
+
+.whyus h1 {
+  font-weight: 100;
+  color: #e1a87a;
+}
+
+.whyus p {
+  font-size: 14px;
+  margin-top: 2em;
+  width: 80%;
+  font-family: "poppins";
+  text-align: center;
+}
+
+/* Contact Form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.contact-form {
+  width: 80%;
+  max-width: 300px;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact-form h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3366cc;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+  display: grid;
+  margin-left: 2em;
+  flex: 0%;
+}
+
+.footer img {
+  padding-top: 10px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-size: 10px;
+  margin-left: 1em;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.footer .row a {
+  margin: 0 10px;
+  text-decoration: none;
+  
+  color: #e1a87a;
+  transition: 0.5s;
+  
+}
+
+.footer .row a:hover {
+  color: white;
+}
+
+
+  }
+
+ 
