@@ -3,6 +3,7 @@
     padding:0px;
     scroll-behavior: smooth;
     background-color: black;
+    
 
 }
 ::-webkit-scrollbar {
@@ -105,7 +106,7 @@ body {
 .contact-right {
   display: flex;
 justify-content: flex-end;
-gap: 20em;
+gap: 30em;
 align-items: center;
 }
 .links:hover::before {
@@ -117,8 +118,8 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5em;
-    gap: 4em;
+    margin-left: 2em;
+    gap: 2em;
     list-style-type: none;
     font-family:"poppins";
 

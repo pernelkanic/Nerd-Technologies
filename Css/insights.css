@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding:0px;
-    background-color: black;
+
 
 }
 ::-webkit-scrollbar {
@@ -200,84 +200,9 @@ h2 {
     font-weight: 100;
   }
 
-  .vision p{
-    margin-top: 30px;
-    font-family: "poppins";
-    font-size: 1.4em;
-    margin-left: 4em;
-    width:80%;
-  }
-  .expertise h3{
-    font-size: 3em;
-    color: #e1a87a;
-    margin-left: 3.3em;
-    letter-spacing: 4px;
+  
+  
 
-    font-family: "opereum";
-    font-weight: 100;
-
-    }
-
-  .expertise p{
-    margin-top: 30px;
-    margin-left: 7em;
-    font-family: "poppins";
-    font-size: 1.4em;
-    width: 70%;
-  }
-  .whyus{
-    text-align: center;
-    color: white;
-    font-size: 2.5em;
-    margin-top: 5em;
-
-    font-family: "opereum";
-    letter-spacing: 2px;
-  }
-  .whyus h1{
-    font-weight: 100;
-    color: #e1a87a;
-  }
-  .whyus p{
-    text-align: left;
-    font-size: 20px;
-    margin-top: 5em;
-    width: 67%;
-   margin-left: auto;
-   font-family: "poppins";
-   margin-right: auto;
-  }
-
-
-.whatwedo{
-   display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 2em;
-    margin-top: 6em;
-    margin-left: auto;
-    font-family: "opereum";
-    letter-spacing: 2px;
-}
-
-.whatwedo h1{
-  color: #e1a87a;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 100;
-}
-.whatwedo ul{
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  margin-top: 3em;
-  margin-left: auto;
-  margin-right: auto;
-
-  font-family: "poppins";
-  list-style-type: disc;
-}
 hr{
   opacity: 40%;
   width:90%;
@@ -293,7 +218,7 @@ hr{
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  margin-left: 4em;
+ 
   
   }
   .footer img{
@@ -699,9 +624,10 @@ hr{
 }
  
 .insight_header{
-    color:white;
+
     font-family: "poppins";
     width: 80%;
+    font-weight: 300;
     font-size: 2em;
     
 }
