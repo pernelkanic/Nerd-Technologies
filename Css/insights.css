@@ -122,6 +122,9 @@ align-items: center;
     font-family:"poppins";
 
 }
+#menu-items.active {
+  display: flex;
+}
 .mainbody{
     color: white;
    justify-content: center;
@@ -237,6 +240,7 @@ hr{
   .maildiv{
     display: flex;
     flex-direction: column;
+   
     align-items: center;
   }
 
@@ -273,7 +277,7 @@ hr{
   margin:0% 1%;
   }
 
-  @media (max-width:720px){
+  @media (max-width:600px){
     *{
       overflow-x: hidden;
     }
@@ -376,59 +380,77 @@ h2:hover {
 }
 
 hr{
-  margin-top: 40px;
-  width: 90%;
-  margin-left:1.3em;
-}
-.gmail{
-  margin-top: 65px;
-  margin-left: 6px;
-  font-size: 10px;
-  color: #e1a87a;
+  opacity: 40%;
+  width:90%;
+  margin-top: 10em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.gmail:hover{
-  color: white;
-  transition: 0.30s;
-}
-
-.footer img{
-  padding: 0px;
-  padding-top: 28px;
-  width:5em;
-  height: 5em;
+.footer{
+  background:black;;
+  text-align:center;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
   margin-left: 4em;
-}
-.footer .row{
+  
+  }
+  .footer img{
+    padding: 0px;
+    width: 10em;
+    height: 10em;
+    
+    
+  }
+  .gmail{
+    margin-top: 30px;
+    margin-left: 90px;
 
-  display: inline;
-  width:40px;
-  margin:2% 0%;
-  margin-left: 5.6em;
-  padding:3%  0% 2% 0% ;
+   font-size: 20px;
+    color: #e1a87a;
+    text-align: center;
+  }
+ .maildiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .gmail:hover{
+    color: white;
+    transition: 0.30s;
+  }
+
+  .footer .row{
+
+  display: inline-flex;
+  width:400px;
+  margin:6% 0%;
+
+  padding:2%  0% ;
   color:gray;
   font-size:0.8em;
   }
 
   .footer .row a{
-  margin: 0px 20px 1px 5px;
+  margin: 0px 20px 10px 20px;
   text-decoration:none;
   color:#e1a87a;
   transition:0.5s;
   }
 
-
-  .footer{
-  text-align:left;
-  padding:5%;
+  .footer .row a:hover{
+  color:#fff;
   }
-  .footer .row ul li{
-  display:block;
 
-  text-align:left;
-  }
+
   .footer .row a i{
-  margin:0% 6% 20%;
+  font-size:2em;
+  margin:0% 1%;
   }
   }
   .aboutpageover{
@@ -532,8 +554,11 @@ hr{
 
 .grid_container_video{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly
 
+}
+iframe{
+  margin-top: 2em;
 }
 #second_container{
   padding-top: 2em;
@@ -639,4 +664,222 @@ hr{
     margin-top: 5em;
     margin-bottom: 10em;
 }
+#insights_img{
+  width: 100%;
+  height: 39em;
+  object-fit:cover;
+}
+@media (max-width:600px) {
+  * {
+    overflow-x: hidden;
+  }
 
+  img {
+    padding: 0;
+  }
+  .squareimg{
+    margin-top: 1em;
+    width: 8em;
+    height: 8em;
+    padding: 0px 0px 0px 1em;
+  }
+
+  .navbar{
+
+    margin-left: 8em;
+    gap:6em;
+  }
+  .menu-icon {
+    
+    margin-top: 1em;
+    
+    display: block;
+    color: white;
+    
+  }
+  
+  #menu-items {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  
+    z-index: 998;
+    text-align: center; /* Ensures items are centered */
+  }
+  
+  #menu-items.active {
+    background-color: black;
+    margin-top: 0px;
+    display: block;
+  }
+  
+  #menu-items ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #menu-items li {
+    display: block;
+    margin: 10px 0;
+  }
+ 
+  .links:hover::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 2%;
+  }
+
+  .links::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background-color: white;
+    bottom: -5px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+  .links:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .navbarul {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3em;
+    font-size: 9px;
+    gap: 9em;
+    list-style-type: none;
+    font-family: "poppins";
+  }
+
+  .mainbody {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7em;
+  }
+
+  .mainbody h1 {
+    font-size: 2.5em;
+    letter-spacing: 0px;
+    font-family: "opereum";
+    float: none;
+    width: 11em;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  /* h2 Styling */
+  h2 {
+    margin-top: 30px;
+    font-size: 1em;
+    font-family: "poppins";
+    font-weight: 100;
+    width: 27em;
+    margin-left: em;
+    color: white;
+    --b: 0.1em;
+    --c: #e1a87a;
+    display: inline-block;
+    color: white;
+    padding-block: var(--b);
+    background: linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%)) / 100% 200%,
+                linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+  }
+
+  h2:hover {
+    color: #e1a87a;
+    --_p: 100%;
+    --_s: .3s;
+  }
+  .insight_header{
+
+    font-family: "poppins";
+    width: 90%;
+    font-weight: 300;
+    font-size: 1.4em;
+    
+}
+.insight_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 10em;
+}
+#insights_img{
+  object-fit: fill;
+  width: 40em;
+  height: 40em;
+  
+}
+.grid_container_video{
+  display: flex;
+  margin-left: 1.5em;
+  flex-direction: column;
+}
+#second_container{
+  padding:0px;
+}
+.footer {
+  background: black;
+  text-align: center;
+
+  padding: 20px;
+  display: grid;
+  margin-left: 0px;
+  flex: 0%;
+}
+
+.footer img {
+  padding-top: 10px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+.gmail{
+  margin-left: 2em;
+}
+#number_phone{
+  margin-left: 0px;
+}
+.footer .row {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-size: 10px;
+  margin-left: 1em;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.footer .row a {
+  margin: 0 10px;
+  text-decoration: none;
+  
+  color: #e1a87a;
+  transition: 0.5s;
+  
+}
+
+.footer .row a:hover {
+  color: white;
+}
+}

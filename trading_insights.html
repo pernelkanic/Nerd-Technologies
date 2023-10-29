@@ -14,16 +14,13 @@ maximum-scale=1.0, user-scalable=no" >
 </head>
 
 <style>
-#insights_img{
-  width: 100%;
-  height: 39em;
-  object-fit:cover;
-}
+
 </style>
 <nav style="background-color: black;">
   <div class="navbar">
       <a href="./index.html" class="imglinks"><img src="./Static/squarebullnameimg.jpg" alt="" class="squareimg"></a>
-      <div class="contact-right">
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <div class="contact-right" id="menu-items">
       <div>
       <ul class="listitem">
         <li><a href="index.html" class="links">Home</a></li>
@@ -44,6 +41,7 @@ maximum-scale=1.0, user-scalable=no" >
         <div class="insight_container">
         <h3 class="insight_header">Welcome to 'Trade Insights,' where we share our expertly crafted trades based on rigorous technical analysis and precise price action methods. Our website is a reference library of video content that delves into the trades we've taken, dissecting each move with detailed explanations and insights. Join us in mastering the art of trading through our carefully selected and analyzed trades.</h>
         </div>
+        <div class="video_container">
         <div class="grid_container_video">
             <iframe width="370" height="300" src="https://www.youtube.com/embed/I0L3gsBgFZQ?si=qJId7UAV1c9C1arJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe width="370" height="300" src="https://www.youtube.com/embed/KDHOkDBawn0?si=rRH_du9MBR4TKrjb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -54,6 +52,7 @@ maximum-scale=1.0, user-scalable=no" >
         <iframe width="370" height="300" src="https://www.youtube.com/embed/o3jRtWL0T28?si=W5yhV05u3JA3SmTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>       
         </iframe>
     </div>
+</div>
 </div>
         </main>
 
@@ -83,3 +82,7 @@ maximum-scale=1.0, user-scalable=no" >
 </body>
 
 </html>
+<script>function toggleMenu() {
+    var menu = document.querySelector('#menu-items');
+    menu.classList.toggle('active');
+  }</script>
