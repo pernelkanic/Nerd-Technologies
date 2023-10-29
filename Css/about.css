@@ -172,13 +172,15 @@
 }
 
 .card__image {
-  height: 160px;
-  width: 160px;
-  border-radius: 50%;
-  border: 5px solid ;
-  margin-top: 20px;
+   padding-left: 0px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 4px solid ;
+    margin-top: 20px;
 
 }
+
 
 
 
@@ -308,13 +310,16 @@ hr{
     
   }
   .gmail{
-    margin-top: 120px;
+    margin-top: 30px;
     margin-left: 90px;
-    font-size: 20px;
+
+   font-size: 20px;
     color: #e1a87a;
     text-align: center;
   }
-  .maildiv{
+ .maildiv{
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 

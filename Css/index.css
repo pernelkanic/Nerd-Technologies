@@ -3,6 +3,7 @@
     padding:0px;
     scroll-behavior: smooth;
     background-color: black;
+   
     
 
 }
@@ -105,8 +106,9 @@ body {
   }
 .contact-right {
   display: flex;
-justify-content: flex-end;
-gap: 30em;
+  gap:8vh;
+  justify-content: flex-end;
+
 align-items: center;
 }
 .links:hover::before {
@@ -118,9 +120,10 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 2em;
-    gap: 2em;
+    margin-left:3em;
+    gap: 8vh;
     list-style-type: none;
+   
     font-family:"poppins";
 
 }
@@ -542,13 +545,15 @@ hr{
     
   }
   .gmail{
-    margin-top: 120px;
+    margin-top: 30px;
     margin-left: 90px;
    
     color: #e1a87a;
     text-align: center;
   }
   .maildiv{
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
