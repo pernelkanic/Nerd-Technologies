@@ -17,10 +17,11 @@ maximum-scale=1.0, user-scalable=no" >
 <nav>
   <div class="navbar">
       <a href="./index.html" class="imglinks"><img src="./Static/squarebullnameimg.jpg" alt=""></a>
-      <div class="contact-right">
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <div class="contact-right" id="menu-items">
       <div>
       <ul class="listitem">
-           <li><a href="index.html" class="links">Home</a></li>
+           <li><a href="index.html" class="links" >Home</a></li>
           <li><a href="trading_insights.html" class="links">Trading Insights</a></li>
           <li><a href="courses.html" class="links">Courses</a></li>
           <li><a href="careers.html" class="links">Careers</a></li>
@@ -133,7 +134,7 @@ maximum-scale=1.0, user-scalable=no" >
     <div class="footer">
         <div class="maildiv">
             <a href="" class="gmail">Squarebullfintechpvt@gmail.com</a>
-            <a href="" class="gmail" class="margin-top:10px;">+91 6379668275</a>
+            <a href="" class="gmail" class="margin-top:10px;" id="number_phone">+91 6379668275</a>
         </div>
         <div>
             <img src="./Static/squarebullnameimg.jpg" alt="">
@@ -151,3 +152,7 @@ maximum-scale=1.0, user-scalable=no" >
 </body>
 
 </html>
+<script>function toggleMenu() {
+  var menu = document.querySelector('#menu-items');
+  menu.classList.toggle('active');
+}</script>
