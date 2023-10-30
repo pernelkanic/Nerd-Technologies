@@ -831,8 +831,13 @@ iframe{
 }
 .grid_container_video{
   display: flex;
-  margin-left: 0.2em;
+  
+  margin-left: 2em;
   flex-direction: column;
+}
+iframe{
+  width: 300px;
+  height:300px;
 }
 
 #second_container{
