@@ -16,9 +16,11 @@ maximum-scale=1.0, user-scalable=no" >
 
 <body>
     <nav>
+        
         <div class="navbar_css">
             <a href="./index.html" class="imglinks"><img src="./Static/squarebullnameimg.jpg" alt="" class="logoimg"></a>
-            <div class="contact-right">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="contact-right" id="menu-items">
             <div>
             <ul class="listitem">
                  <li><a href="index.html" class="links">Home</a></li>
@@ -102,3 +104,7 @@ maximum-scale=1.0, user-scalable=no" >
     
 
 </html>
+<script>function toggleMenu() {
+    var menu = document.querySelector('#menu-items');
+    menu.classList.toggle('active');
+  }</script>

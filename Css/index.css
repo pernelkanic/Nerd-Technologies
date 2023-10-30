@@ -1044,7 +1044,7 @@ hr{
   top: 60px;
   right: 0;
   width: 100%;
-  background-color: #f8f8f8; /* Adjust background color as needed */
+  background-color: black; /* Adjust background color as needed */
   z-index: 998;
   text-align: center; /* Ensures items are centered */
 }
@@ -1116,7 +1116,8 @@ body, button, input {
 .mainbody {
   color: white;
   text-align: center;
-  margin-top: 7em;
+  margin-top: 10em;
+  margin-bottom: 12em;
 }
 
 .mainbody h1 {

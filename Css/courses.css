@@ -230,11 +230,11 @@ p{
   
     .navbar {
       display: flex;
-     
       margin-left: 7.3em;
       gap:5em;
+      
     }
-  
+    
     img {
       margin-top: 1em;
       width: 8em;

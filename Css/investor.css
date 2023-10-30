@@ -52,7 +52,9 @@
        position: relative;
        display: inline-block;
    }
-   
+   #menu-items.active {
+    display: flex;
+  }
    .contact-flex{
      display: flex;
      justify-content: flex-end;
@@ -85,6 +87,7 @@
        transform: scaleX(0);
        transition: transform .3s ease-in-out;
      }
+
    .contact-right {
      display: flex;
    justify-content: flex-end;
@@ -590,3 +593,120 @@
         font-size: 1.2em;
       }
   }
+  @media only screen and (max-width: 600px) {
+    *{
+      margin: 0px;
+      padding: 0px;
+      
+  
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888; 
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+    @font-face {
+        font-family: "opereum";
+        src: url("../Static/fonts/Demo_Fonts/Fontspring-DEMO-orpheuspro-regular.otf");
+      }
+      @font-face {
+          font-family: "poppins";
+          src: url("/Static/fonts/Poppins-Black.ttf");
+        }
+        .navbar{
+          display: flex;
+          padding-left:7em ;
+          gap:5em;
+         }
+        .menu-icon {
+          margin-top: 1em;
+          display: block;
+          color: white;
+        }
+        
+        #menu-items {
+          
+          background-color: black ;
+          display: none;
+          position: absolute;
+          top: 10px;
+          right: 0;
+          width: 100%;
+        
+          z-index: 998;
+          text-align: center; /* Ensures items are centered */
+        }
+        
+        #menu-items.active {
+          margin-top: 2em;
+          display: block;
+        }
+        
+        #menu-items ul {
+          display: block;
+          padding: 0;
+          margin: 0;
+        }
+        
+        #menu-items li {
+          display: block;
+          margin: 10px 0;
+        }
+        .footer {
+          background: black;
+          text-align: center;
+          padding: 20px;
+          display: grid;
+          margin-left: 1em;
+          flex: 0%;
+        }
+        
+        .footer img {
+          padding-top: 10px;
+          width: 80px;
+          height: 80px;
+          margin: 0 auto;
+          display: block;
+        }
+        .gmail{
+          margin-left: 1em;
+        }
+        #number_phone{
+          margin-left: 0px;
+        }
+        .footer .row {
+          display: flex;
+          justify-content: center;
+          color: gray;
+          font-size: 10px;
+          margin-left: 0.7em;
+          margin-top: 10px;
+          width: 100%;
+        }
+        
+        .footer .row a {
+          margin: 0 10px;
+          text-decoration: none;
+          
+          color: #e1a87a;
+          transition: 0.5s;
+          
+        }
+        
+        .footer .row a:hover {
+          color: white;
+        }
+      }
