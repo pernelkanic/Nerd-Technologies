@@ -17,7 +17,8 @@ maximum-scale=1.0, user-scalable=no" >
     <nav>
       <div class="navbar">
           <a href="./index.html" class="imglinks"><img src="./Static/squarebullnameimg.jpg" alt=""></a>
-          <div class="contact-right">
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+          <div class="contact-right" id="menu-items">
           <div>
           <ul class="listitem">
             <li><a href="index.html" class="links">Home</a></li>
@@ -67,3 +68,7 @@ maximum-scale=1.0, user-scalable=no" >
         </div>
         </footer>
 </body>
+<script>function toggleMenu() {
+  var menu = document.querySelector('#menu-items');
+  menu.classList.toggle('active');
+}</script>
