@@ -373,8 +373,8 @@ hr{
   .navbar {
     display: flex;
    
-    margin-left: 8em;
-    gap:6em;
+    margin-left: 7em;
+    gap:5em;
   }
 
   img {
@@ -676,7 +676,7 @@ hr{
     text-align: center;
     padding: 20px;
     display: grid;
-    margin-left: 2em;
+    margin-left: 1em;
     flex: 0%;
   }
   
