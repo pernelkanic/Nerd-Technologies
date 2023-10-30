@@ -374,7 +374,7 @@ hr{
     display: flex;
    
     margin-left: 7em;
-    gap:5em;
+    gap:4.8em;
   }
 
   img {
@@ -676,7 +676,7 @@ hr{
     text-align: center;
     padding: 20px;
     display: grid;
-    margin-left: 1em;
+    margin-left: 1vh;
     flex: 0%;
   }
   
